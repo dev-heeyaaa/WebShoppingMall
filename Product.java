@@ -20,6 +20,21 @@ public class Product implements Serializable{
 		setUnitPrice(unitPrice);
 	}
 	
+	public Product(String productId, String name, String unitPrice, 
+					String description, String manufacturer, String category,
+					String unitsInStock, String condition) {
+		
+
+		this.productId = productId;
+		this.name = name;
+		this.unitPrice = Integer.parseInt(unitPrice);
+		this.description = description;
+		this.manufacturer = manufacturer;
+		this.category = category;
+		this.unitsInStock = Integer.parseInt(unitsInStock);
+		this.condition = condition;
+	}
+	
 	public String getProductId() {
 		return productId;
 	}
